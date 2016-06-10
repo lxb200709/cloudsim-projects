@@ -1,0 +1,60 @@
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               1973                     0               1945163         328363          
+
+320X180         2               1067                     10000           572090          101883          
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               1908                     0               1945163         328363          
+
+320X180         2               1064                     10000           572090          101883          
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               1926                     0               1945163         328363          
+
+320X180         2               1072                     10000           572090          101883          
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               1918                     0               1945163         328363          
+
+320X180         2               1051                     10000           572090          101883          
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               1892                     0               1945163         328363          
+
+320X180         2               1042                     10000           572090          101883          
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               2386                     0               1945163         328363          
+
+320X180         2               1102                     10000           572090          101883          
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               1968                     0               1945163         328363          
+
+320X180         2               1076                     10000           572090          101883          
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               1947                     0               1945163         328363          
+
+320X180         2               1063                     10000           572090          101883          
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               1881                     0               1945163         328363          
+
+320X180         2               1124                     10000           572090          101883          
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               2047                     0               1945163         328363          
+
+320X180         2               1170                     10000           572090          101883          
+

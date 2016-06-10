@@ -1,0 +1,80 @@
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               5466                     0               15944141        329408          
+
+320X180         2               4126                     10000           9176460         202602          
+
+320X180         3               251                      20000           43066           21854           
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               5259                     0               15944141        329408          
+
+320X180         2               4081                     10000           9176460         202602          
+
+320X180         3               246                      20000           43066           21854           
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               5335                     0               15944141        329408          
+
+320X180         2               4595                     10000           9176460         202602          
+
+320X180         3               269                      20000           43066           21854           
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               5552                     0               15944141        329408          
+
+320X180         2               4148                     10000           9176460         202602          
+
+320X180         3               250                      20000           43066           21854           
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               5319                     0               15944141        329408          
+
+320X180         2               4108                     10000           9176460         202602          
+
+320X180         3               249                      20000           43066           21854           
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               5316                     0               15944141        329408          
+
+320X180         2               4111                     10000           9176460         202602          
+
+320X180         3               253                      20000           43066           21854           
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               5547                     0               15944141        329408          
+
+320X180         2               4313                     10000           9176460         202602          
+
+320X180         3               271                      20000           43066           21854           
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               5641                     0               15944141        329408          
+
+320X180         2               4337                     10000           9176460         202602          
+
+320X180         3               262                      20000           43066           21854           
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               5644                     0               15944141        329408          
+
+320X180         2               4644                     10000           9176460         202602          
+
+320X180         3               269                      20000           43066           21854           
+
+Resolution      GOP#            TranscodingTime          Pts             InputSize       outputSize      
+
+320X180         1               5510                     0               15944141        329408          
+
+320X180         2               4358                     10000           9176460         202602          
+
+320X180         3               258                      20000           43066           21854           
+
