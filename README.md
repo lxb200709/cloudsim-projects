@@ -1,40 +1,73 @@
-# CloudSim: A Framework For Modeling And Simulation Of Cloud Computing Infrastructures And Services #
+#On-Demand Video Transcoding Using Cloud Services#
+The architecture for on-demand video transcoding includes includes six main components, namely video splitter, task (i.e., GOP) scheduler, transcoding virtual machines (VM), elasticity manager, video merger, and caching policy.
 
-Cloud computing is the leading approach for delivering reliable, secure, fault-tolerant, sustainable, and scalable computational services. Hence timely, repeatable, and controllable methodologies for performance evaluation of new cloud applications and policies before their actual development are reqruied. Because utilization of real testbeds limits the experiments to the scale of the testbed and makes the reproduction of results an extremely difficult undertaking, simulation may be used.
+video splitter splits a video into GOPs, which can be transcoded independently. The code for video segmentation can be downloaded here. Also, the benchmark videos can be download here.
 
-CloudSim goal is to provide a generalized and extensible simulation framework that enables modeling, simulation, and experimentation of emerging Cloud computing infrastructures and application services, allowing its users to focus on specific system design issues that they want to investigate, without getting concerned about the low level details related to Cloud-based infrastructures and services.
-
-CloudSim is developed in [the Cloud Computing and Distributed Systems (CLOUDS) Laboratory](http://cloudbus.org/), at [the Computer Science and Software Engineering Department](http://www.csse.unimelb.edu.au/) of [the University of Melbourne](http://www.unimelb.edu.au/).
-
-More information can be found on the [CloudSim's web site](http://cloudbus.org/cloudsim/).
+The main contributions of this project are a QoS-aware scheduling method for task (i.e., GOP) scheduler and a dynamic resource provisioning policy for elasticity manager.
 
 
-CloudSim is powered by [jProfiler](http://www.ej-technologies.com/products/jprofiler/overview.html).
 
-# Main features #
+##How to use it in Eclipse
 
-  * support for modeling and simulation of large scale Cloud computing data centers
-  * support for modeling and simulation of virtualized server hosts, with customizable policies for provisioning host resources to virtual machines
-  * support for modeling and simulation of energy-aware computational resources
-  * support for modeling and simulation of data center network topologies and message-passing applications
-  * support for modeling and simulation of federated clouds
-  * support for dynamic insertion of simulation elements, stop and resume of simulation
-  * support for user-defined policies for allocation of hosts to virtual machines and policies for allocation of host resources to virtual machines
+####Step1: Download and import project
+```bash
+File -> Import -> Maven -> Existing Maven Projects -> browse the location of cloudsim-projects/module
+```
+####Step2: Download dependent jars through Maven
+```bash
+Right click module -> Maven -> Update Projects
+Right click module -> Run As -> Maven build ... -> Goals ("clean install") -> Run
+```
 
+##Project structure
 
-# Download #
+This project includes four module:
+```bash
+  * cloudsim
+  * cloudsim-example
+  * cloudsim-impl
+  * cloudTranscodingApp
+```
+```cloudsim``` and ```cloudsim-example``` module are from original cloudsim package, more information can be found on the CloudSim's web site.
+
+```cloudsim-impl``` module mainly implements broker and datacenter for scheduling, it contains class extends class from cloudsim (e.g. TranscodingBroker extends DatacenterBroker, VideoSegment extends Cloudlet...)
+
+```cloudTranscodingApp``` includes the main function where the whole simulation starts. The system reading video requests through here. Resource provisioning is also implemented in this module.
+
+How to test
+
+Define command lines.
+```java
+String[] args = {"-property", "/your/directory/to/put/config.properties",    //location to store property file
+                 "-input", "/your/directory/to/put/inputdata",               //location of inputdata
+                 "-output", "/your/directory/to/put/output.txt",             //location for outputdata
+                 "-sortalgorithm", "SDF",          //sorting algorithm
+                 "-startupqueue",                  //whether includes startup queue or not
+                 "-stqprediction",                 //whether include startup queue prediction or not
+                 "-videonum", "500",               //video request number
+                 "-vmqueue", "1",                  //vm local queue length
+                 "-vmNum", "0",                    //vm number, "0" means dynamic
+                 "-vmfrequency", "10000",          //vm provisioning frequency
+                 "-goplength", "AVERAGE",          //gop length
+                 "-upthreshold", "0.10",           //provisioning upper threadshold
+                 "-lowthreshold", "0.05",          //provisioning lower threadshold
+                 "-testPeriod", "1200000",         //Test period
+                 "-rentingTime", "100000",         //vm renting time
+                 "-seedshift", "2"};
+ ```
+Download
 
 The downloaded package contains all the source code, examples, jars, and API html files.
 
-# Publications #
+Publications
 
-  * Anton Beloglazov, and Rajkumar Buyya, [Optimal Online Deterministic Algorithms and Adaptive Heuristics for Energy and Performance Efficient Dynamic Consolidation of Virtual Machines in Cloud Data Centers](http://beloglazov.info/papers/2012-optimal-algorithms-ccpe.pdf), Concurrency and Computation: Practice and Experience, Volume 24, Number 13, Pages: 1397-1420, John Wiley & Sons, Ltd, New York, USA, 2012.
-  * Saurabh Kumar Garg and Rajkumar Buyya, [NetworkCloudSim: Modelling Parallel Applications in Cloud Simulations](http://www.cloudbus.org/papers/NetworkCloudSim2011.pdf), Proceedings of the 4th IEEE/ACM International Conference on Utility and Cloud Computing (UCC 2011, IEEE CS Press, USA), Melbourne, Australia, December 5-7, 2011.
-  * **Rodrigo N. Calheiros, Rajiv Ranjan, Anton Beloglazov, Cesar A. F. De Rose, and Rajkumar Buyya, [CloudSim: A Toolkit for Modeling and Simulation of Cloud Computing Environments and Evaluation of Resource Provisioning Algorithms](http://www.buyya.com/papers/CloudSim2010.pdf), Software: Practice and Experience (SPE), Volume 41, Number 1, Pages: 23-50, ISSN: 0038-0644, Wiley Press, New York, USA, January, 2011. (Preferred reference for CloudSim)**
-  * Bhathiya Wickremasinghe, Rodrigo N. Calheiros, Rajkumar Buyya, [CloudAnalyst: A CloudSim-based Visual Modeller for Analysing Cloud Computing Environments and Applications](http://www.cloudbus.org/papers/CloudAnalyst-AINA2010.pdf), Proceedings of the 24th International Conference on Advanced Information Networking and Applications (AINA 2010), Perth, Australia, April 20-23, 2010.
-  * Rajkumar Buyya, Rajiv Ranjan and Rodrigo N. Calheiros, [Modeling and Simulation of Scalable Cloud Computing Environments and the CloudSim Toolkit: Challenges and Opportunities](http://www.cloudbus.org/papers/CloudSim-HPCS2009.pdf), Proceedings of the 7th High Performance Computing and Simulation Conference (HPCS 2009, ISBN: 978-1-4244-4907-1, IEEE Press, New York, USA), Leipzig, Germany, June 21-24, 2009.
+* ##Xiangbo Li, Mohsen Amini Salehi, Magdi Bayoumi, VLSC: Video Live Streaming Based On Cloud Services, Submitted to 6th IEEE International Conference on Big Data and Cloud Computing Conference (BDCloud ’16), Atlanta, GA, USA, Oct. 2016.
+* ##Xiangbo Li, Mohsen Amini Salehi, Magdi Bayoumi, Rajkumar Buyya, [CVSS: A Cost-Efficient and QoS-Aware Video Streaming Using Cloud Services](http://hpcclab.org/paperPdf/ccgrid16/CloudTranscodingconf.pdf), in Proceedings of 16th ACM/IEEE International Conference on Cluster Cloud and Grid Computing (CCGrid ’16), Columbia, May 2016.
+* ##Xiangbo Li, Mohsen Amini Salehi, Magdi Bayoumi, [High Performance Online Video Transcoding Using Cloud Services](http://hpcclab.org/paperPdf/ccgrid16/CloudTransSymp.pdf), in Proceedings of the 16th ACM/IEEE International Conference on Cluster Cloud and Grid Computing (CCGrid ’16), Columbia, May 2016 (Doctoral symposium)
+*Mohsen Amini Salehi, ##Xiangbo Li, HLSaaS: High-Level Live Video Streaming as a Service, Presented in Stream2016 workshop, Washington DC, USA, Mar. 2016.
+* ##Xiangbo Li, Mohsen Amini Salehi, Magdi Bayoumi, Cloud-Based Video Streaming for Energy- and Compute-Limited Thin Clients, Presented in Stream2015 Workshop at Indiana University, Indianapolis, USA, Oct. 2015.
+Licence
 
+Source code can be found on [github].
 
-
-
-[![](http://www.cloudbus.org/logo/cloudbuslogo-v5a.png)](http://cloudbus.org/)
+Developed by [Xiangbo Li]
