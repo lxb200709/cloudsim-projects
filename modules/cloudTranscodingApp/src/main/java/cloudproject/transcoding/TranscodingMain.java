@@ -125,22 +125,22 @@ public class TranscodingMain {
 	/**
 	* Creates main() to run this example
 	*/
-	public static void main(String[] args) {
+	public static void main(String[] arg) {
 		
-	/*printOutputFile pof = new printOutputFile();  
-  	pof.printOutToFile("cloudTranscoding_v3"); */	
+	printOutputFile pof = new printOutputFile();  
+  	pof.printOutToFile("cloudTranscoding"); 	
 		
 	Log.printLine("Starting Video Transcoding Simulation...");
 	
     Log.printLine("Seting up configuration property file...\n");	
     
-    /*String[] args = {"-property", "/Users/lxb200709/Documents/TransCloud/jarfiles/properties/config.properties", 
-            "-input", "/Users/lxb200709/Documents/TransCloud/jarfiles/inputdata",
-            "-output", "/Users/lxb200709/Documents/TransCloud/jarfiles/outputdata/test.txt", 
+    String[] args = {"-property", "/home/yamini/Documents/resources/properties/config.properties", 
+            "-input", "/home/yamini/Documents/resources/inputdata",
+            "-output", "/home/yamini/Documents/resources/outputdata/test.txt", 
             "-sortalgorithm", "SDF",
             "-startupqueue",
             "-stqprediction",
-            "-videonum", "500",
+            "-videonum", "100",
             "-vmqueue", "1",
             "-vmNum", "0",  
             "-vmfrequency", "10000",
@@ -149,7 +149,7 @@ public class TranscodingMain {
             "-lowthreshold", "0.05",
             "-testPeriod", "1200000",
             "-rentingTime", "100000",
-            "-seedshift", "2"};*/
+            "-seedshift", "2"};
     
 	ParseCmdLine pcl = new ParseCmdLine();
 	CmdLineParser parser = new CmdLineParser(pcl);

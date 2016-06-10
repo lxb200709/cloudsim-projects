@@ -9,7 +9,7 @@ public class printOutputFile {
 	public void printOutToFile(String filename){
 	    	
 	    	try{
-	    		PrintStream myconsole = new PrintStream(new File("/Users/lxb200709/Documents/TransCloud/outputPrint/"+filename+".txt"));
+	    		PrintStream myconsole = new PrintStream(new File("/home/yamini/Documents/resources/consoleLog"+filename+".txt"));
 	    		System.setOut(myconsole);
 	    		
 	    	}catch(FileNotFoundException e){

@@ -17,9 +17,8 @@ import org.cloudbus.cloudsim.core.CloudSim;
  * even though cloudlets must wait for CPU, data transfer happens as soon as cloudlets are
  * submitted.
  * 
- * @author Rodrigo N. Calheiros
- * @author Anton Beloglazov
- * @since CloudSim Toolkit 1.0
+ * @author Xiangbo Li
+ *
  */
 public class VideoSchedulerSpaceShared extends CloudletSchedulerSpaceShared {
 	

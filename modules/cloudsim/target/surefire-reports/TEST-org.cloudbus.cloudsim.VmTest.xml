@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.07" errors="0" skipped="0" tests="20" name="org.cloudbus.cloudsim.VmTest">
+<testsuite failures="0" time="0.078" errors="0" skipped="0" tests="20" name="org.cloudbus.cloudsim.VmTest">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/amd64"/>
@@ -25,7 +25,7 @@
 "/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="os.name" value="Linux"/>
-    <property name="classworlds.conf" value="/home/yamini/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5508937750741908711.tmp"/>
+    <property name="classworlds.conf" value="/home/yamini/workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf5228627333116813770.tmp"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -60,17 +60,17 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testGetNumberOfPes"/>
-  <testcase time="0.001" classname="org.cloudbus.cloudsim.VmTest" name="testGetMips"/>
-  <testcase time="0.068" classname="org.cloudbus.cloudsim.VmTest" name="testGetCurrentRequestedMips"/>
-  <testcase time="0.001" classname="org.cloudbus.cloudsim.VmTest" name="testGetTotalUtilization"/>
-  <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testUpdateVmProcessing"/>
   <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testGetRam"/>
   <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testGetBw"/>
+  <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testGetNumberOfPes"/>
+  <testcase time="0.077" classname="org.cloudbus.cloudsim.VmTest" name="testGetCurrentRequestedMips"/>
+  <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testGetTotalUtilization"/>
+  <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testUpdateVmProcessing"/>
+  <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testGetMips"/>
   <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testSetMips"/>
   <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testGetSize"/>
   <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testGetVmm"/>
-  <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testGetHost"/>
+  <testcase time="0.001" classname="org.cloudbus.cloudsim.VmTest" name="testGetHost"/>
   <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testIsInMigration"/>
   <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testGetTotalUtilizationMips"/>
   <testcase time="0" classname="org.cloudbus.cloudsim.VmTest" name="testGetUid"/>
