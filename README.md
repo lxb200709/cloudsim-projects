@@ -1,11 +1,11 @@
 #On-Demand Video Transcoding Using Cloud Services#
-The architecture for on-demand video transcoding includes includes six main components, namely video splitter, task (i.e., GOP) scheduler, transcoding virtual machines (VM), elasticity manager, video merger, and caching policy.
+The architecture for on-demand video transcoding includes includes six main components, namely ```video splitter```, ```task (i.e., GOP) scheduler```, ```transcoding virtual machines (VM)```, ```elasticity manager```, ```video merger```, and ```caching policy```.
 
-video splitter splits a video into GOPs, which can be transcoded independently. The code for video segmentation can be downloaded here. Also, the benchmark videos can be download here.
+```video splitter``` splits a video into GOPs, which can be transcoded independently. The code for video segmentation can be downloaded [here](https://github.com/lxb200709/videotranscoding_gop). Also, the benchmark videos can be downloaded [here](https://goo.gl/TE5iJ5).
 
-The main contributions of this project are a QoS-aware scheduling method for task (i.e., GOP) scheduler and a dynamic resource provisioning policy for elasticity manager.
+The main contributions of this project are a QoS-aware scheduling method for ```task (i.e., GOP) scheduler``` and a dynamic resource provisioning policy for ```elasticity manager```.
 
-
+<img src="architecture.png" width="400">
 
 ##How to use it in Eclipse
 
