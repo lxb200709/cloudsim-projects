@@ -61,7 +61,6 @@ The downloaded package contains all the source code, examples, jars, and API htm
 
 ##Publications
 
-* **Xiangbo Li**, Mohsen Amini Salehi, Magdi Bayoumi, VLSC: Video Live Streaming Based On Cloud Services, Accepted in the 6th IEEE International Conference on Big Data and Cloud Computing Conference (BDCloud ’16), Atlanta, GA, USA, Oct. 2016.
 * **Xiangbo Li**, Mohsen Amini Salehi, Magdi Bayoumi, Rajkumar Buyya, [CVSS: A Cost-Efficient and QoS-Aware Video Streaming Using Cloud Services](http://hpcclab.org/paperPdf/ccgrid16/CloudTranscodingconf.pdf), in Proceedings of 16th ACM/IEEE International Conference on Cluster Cloud and Grid Computing (CCGrid ’16), Columbia, May 2016.
 * **Xiangbo Li**, Mohsen Amini Salehi, Magdi Bayoumi, [High Performance Online Video Transcoding Using Cloud Services](http://hpcclab.org/paperPdf/ccgrid16/CloudTransSymp.pdf), in Proceedings of the 16th ACM/IEEE International Conference on Cluster Cloud and Grid Computing (CCGrid ’16), Columbia, May 2016 (Doctoral symposium)
 * Mohsen Amini Salehi, **Xiangbo Li**, HLSaaS: High-Level Live Video Streaming as a Service, Presented in Stream2016 workshop, Washington DC, USA, Mar. 2016.
