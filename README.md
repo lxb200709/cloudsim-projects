@@ -1,4 +1,4 @@
-#On-Demand Video Transcoding Using Cloud Services#
+# On-Demand Video Transcoding Using Cloud Services #
 The architecture for on-demand video transcoding includes includes six main components, namely ```video splitter```, ```task (i.e., GOP) scheduler```, ```transcoding virtual machines (VM)```, ```elasticity manager```, ```video merger```, and ```caching policy```.
 
 ```video splitter``` splits a video into GOPs, which can be transcoded independently. The code for video segmentation can be downloaded [here](https://github.com/lxb200709/videotranscoding_gop). Also, the benchmark videos can be downloaded [here](https://goo.gl/TE5iJ5).
@@ -7,19 +7,19 @@ The main contributions of this project are a QoS-aware scheduling method for ```
 
 <img src="architecture.png" width="400">
 
-##How to use it in Eclipse
+## How to use it in Eclipse
 
-####Step1: Download and import project
+#### Step1: Download and import project
 ```bash
 File -> Import -> Maven -> Existing Maven Projects -> browse the location of cloudsim-projects/module
 ```
-####Step2: Download dependent jars through Maven
+#### Step2: Download dependent jars through Maven
 ```bash
 Right click module -> Maven -> Update Projects
 Right click module -> Run As -> Maven build ... -> Goals ("clean install") -> Run
 ```
 
-##Project structure
+## Project structure
 
 This project includes four module:
 ```bash
@@ -55,17 +55,17 @@ String[] args = {"-property", "/your/directory/to/put/config.properties",    //l
                  "-rentingTime", "100000",         //vm renting time
                  "-seedshift", "2"};
  ```
-##Download
+## Download
 
 The downloaded package contains all the source code, examples, jars, and API html files.
 
-##Publications
+## Publications
 
 * **Xiangbo Li**, Mohsen Amini Salehi, Magdi Bayoumi, Rajkumar Buyya, [CVSS: A Cost-Efficient and QoS-Aware Video Streaming Using Cloud Services](http://hpcclab.org/paperPdf/ccgrid16/CloudTranscodingconf.pdf), in Proceedings of 16th ACM/IEEE International Conference on Cluster Cloud and Grid Computing (CCGrid ’16), Columbia, May 2016.
 * **Xiangbo Li**, Mohsen Amini Salehi, Magdi Bayoumi, [High Performance On-Demand Video Transcoding Using Cloud Services](http://hpcclab.org/paperPdf/ccgrid16/CloudTransSymp.pdf), in Proceedings of the 16th ACM/IEEE International Conference on Cluster Cloud and Grid Computing (CCGrid ’16), Columbia, May 2016 (Doctoral symposium)
 * **Xiangbo Li**, Mohsen Amini Salehi, Magdi Bayoumi, Cloud-Based Video Streaming for Energy- and Compute-Limited Thin Clients, Presented in Stream2015 Workshop at Indiana University, Indianapolis, USA, Oct. 2015.
 
-##Licence
+## Licence
 
 Source code can be found on [github](https://github.com/lxb200709/cloudsim-projects).
 
